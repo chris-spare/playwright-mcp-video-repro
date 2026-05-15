@@ -15,6 +15,8 @@ docker build --platform=linux/amd64 -t pw-mcp-video-repro .
 docker run --rm --platform=linux/amd64 pw-mcp-video-repro
 ```
 
+> **Tested on:** macOS (Apple Silicon) with Docker Desktop, using `--platform=linux/amd64` emulation. The `--platform` flags are only needed on non-amd64 hosts — on a native `linux/amd64` machine, plain `docker build` / `docker run` work.
+
 Observed output (truncated):
 
 ```
